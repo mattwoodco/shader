@@ -1,0 +1,42 @@
+/* https://dirtylinestudio.com/product/dirtyline-36daysoftype-2022/ */
+@font-face {
+    font-family: "dirty";
+    src: url("/fonts/dirtyline/36daysoftype-2022.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 100 900;
+    font-display: block;
+    font-style: normal;
+    font-named-instance: "Regular";
+    src: url("/fonts/inter/Inter-roman.var.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Inter";
+    font-weight: 100 900;
+    font-display: block;
+    font-style: italic;
+    font-named-instance: "Italic";
+    src: url("/fonts/inter/Inter-italic.var.woff2") format("woff2");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* - - - Global Resets - - -  */
+
+#__next {
+    height: 100%;
+}
+
+/* - - - Utility classes - - -  */
+@layer utilities {
+    .bgblur {
+        @apply overflow-hidden backdrop-blur-lg backdrop-filter;
+    }
+}

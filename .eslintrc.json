@@ -1,0 +1,12 @@
+{
+  "extends": ["next", "next/core-web-vitals", "prettier"],
+  "rules": {
+    "no-else-return": "off",
+    "import/order": "off",
+    "@next/next/no-img-element": "off",
+    "line-comment-position": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/no-cycle": "warn",
+    "consistent-return": "off"
+  }
+}
